@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- <link href="https://fonts.googleapis.com/css2?family=Yantramanav:wght@300&display=swap" rel="stylesheet"> -->
+  <title>Frontend Mentor | Profile card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+
+    body {
+      background: hsl(185, 75%, 39%);
+    }
+
+    .bg_pattern_top{
+      background-image: url("images/bg-pattern-card.svg");
+      height: 20vh;
+      width: 375px;
+    }
+
+    .profile_card {
+      font-family: 'Yantramanav', sans-serif;
+    }
+  </style>
+</head>
+<body class="">
+  <div class="profile_card flex flex-col mx-auto my-[10vh] bg-white rounded-2xl overflow-hidden max-w-[375px] sm:max-h-[40vh]">
+    <div class="bg_pattern_top relative h-[20vh]">
+      <img src="images/image-victor.jpg" alt="" class="absolute left-1/2 transform translate-x-[-50%] -bottom-[45px] rounded-full border-[5px] border-white">
+    </div>
+    <div class="profile_data h-[20vh] w-full flex border border-b mx-auto items-center justify-center flex-col">
+      <div class="name_age flex mx-auto w-full justify-center items-center mt-10">
+        <p class="font-bold mr-2 text-[18px] ">Victor Crest</p>
+        <span class="text-[20px] opacity-80">26</span>
+      </div>
+      <span class="opacity-60" >London</span>
+    </div>
+    <div class="stats flex justify-evenly h-[15vh]">
+      <div class="followers flex items-center flex-col justify-center h-full">
+        <h2 class="text-xl font-bold">80K</h2>
+        <span class="text-sm opacity-40 tracking-[2px]">Followers</span>
+      </div>
+      <div class="followers flex items-center flex-col justify-center h-full">
+        <h2 class="text-xl font-bold">803K</h2>
+        <span class="text-sm opacity-40 tracking-[2px]">Likes</span>
+      </div>
+      <div class="followers flex items-center flex-col justify-center h-full">
+        <h2 class="text-xl font-bold">1.4K</h2>
+        <span class="text-sm opacity-40 tracking-[2px]">Photos</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+</body>
+</html>
